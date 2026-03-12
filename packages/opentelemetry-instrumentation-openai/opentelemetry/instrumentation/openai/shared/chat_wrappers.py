@@ -54,6 +54,7 @@ from opentelemetry.trace import SpanKind, Tracer
 from opentelemetry import trace
 from opentelemetry.trace.status import Status, StatusCode
 from wrapt import ObjectProxy
+from opentelemetry.overmind.processor import request_processor
 
 SPAN_NAME = "openai.chat"
 PROMPT_FILTER_KEY = "prompt_filter_results"
@@ -89,6 +90,7 @@ def chat_wrapper(
         kind=SpanKind.CLIENT,
         attributes={SpanAttributes.LLM_REQUEST_TYPE: LLM_REQUEST_TYPE.value},
     )
+    request_processor(span, kwargs)
 
     # Use the span as current context to ensure events get proper trace context
     with trace.use_span(span, end_on_exit=False):
