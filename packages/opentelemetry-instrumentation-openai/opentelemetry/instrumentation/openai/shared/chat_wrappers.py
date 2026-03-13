@@ -90,7 +90,6 @@ def chat_wrapper(
         kind=SpanKind.CLIENT,
         attributes={SpanAttributes.LLM_REQUEST_TYPE: LLM_REQUEST_TYPE.value},
     )
-    request_processor(span, kwargs, "openai.chat")
 
     # Use the span as current context to ensure events get proper trace context
     with trace.use_span(span, end_on_exit=False):
@@ -268,6 +267,7 @@ async def achat_wrapper(
 
 @dont_throw
 async def _handle_request(span, kwargs, instance):
+    request_processor(span, kwargs, "openai.chat")
     _set_request_attributes(span, kwargs, instance)
     _set_client_attributes(span, instance)
     if should_emit_events():

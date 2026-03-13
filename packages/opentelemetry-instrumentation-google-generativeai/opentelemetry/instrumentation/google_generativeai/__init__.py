@@ -40,6 +40,8 @@ from opentelemetry.metrics import Meter, get_meter
 from opentelemetry.trace import SpanKind, get_tracer, StatusCode
 from wrapt import wrap_function_wrapper
 
+from opentelemetry.overmind.processor import request_processor
+
 logger = logging.getLogger(__name__)
 
 WRAPPED_METHODS = [
@@ -209,6 +211,9 @@ async def _awrap(
             SpanAttributes.LLM_REQUEST_TYPE: LLMRequestTypeValues.COMPLETION.value,
         },
     )
+    # Let Overmind capture prompt metadata, if present
+    request_processor(span, kwargs, "google.genai.responses")
+
     start_time = time.perf_counter()
     _handle_request(span, args, kwargs, llm_model, event_logger)
     try:

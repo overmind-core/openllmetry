@@ -39,6 +39,8 @@ from opentelemetry.semconv_ai import (
 from opentelemetry.trace import SpanKind
 from opentelemetry.trace.status import Status, StatusCode
 
+from opentelemetry.overmind.processor import request_processor
+
 SPAN_NAME = "openai.completion"
 LLM_REQUEST_TYPE = LLMRequestTypeValues.COMPLETION
 
@@ -120,6 +122,7 @@ async def acompletion_wrapper(tracer, wrapped, instance, args, kwargs):
 
 @dont_throw
 def _handle_request(span, kwargs, instance):
+    request_processor(span, kwargs, "openai.responses")
     _set_request_attributes(span, kwargs, instance)
     if should_emit_events():
         _emit_prompts_events(kwargs)
@@ -176,9 +179,7 @@ def _set_completions(span, choices):
     for choice in choices:
         index = choice.get("index")
         prefix = f"{GenAIAttributes.GEN_AI_COMPLETION}.{index}"
-        _set_span_attribute(
-            span, f"{prefix}.finish_reason", choice.get("finish_reason")
-        )
+        _set_span_attribute(span, f"{prefix}.finish_reason", choice.get("finish_reason"))
         _set_span_attribute(span, f"{prefix}.content", choice.get("text"))
 
 
