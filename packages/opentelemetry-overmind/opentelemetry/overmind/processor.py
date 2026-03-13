@@ -63,7 +63,6 @@ def request_processor(span: Span, kwargs: dict, type: str = "openai.chat") -> No
         span.set_attribute(OvermindAttributes.GEN_AI_REFERENCE_OUTPUT, reference_output)
 
     prompt_count = [0]
-    print("called", type, kwargs)
 
     if type == "openai.chat":
         # OpenAI chat: classic messages and newer content blocks
