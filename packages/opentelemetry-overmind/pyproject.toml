@@ -1,0 +1,15 @@
+[project]
+authors = [
+    { name = "pritamsoni-hsr", email = "23050213+pritamsoni-hsr@users.noreply.github.com" },
+]
+name = "opentelemetry-overmind"
+readme = "README.md"
+requires-python = ">=3.10,<4"
+version = "0.1.0"
+
+[tool.poetry]
+packages = [{ include = "opentelemetry/overmind" }]
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires      = ["poetry-core>=2.0.0,<3.0.0"]
