@@ -11,6 +11,7 @@ def _store_prompt_attributes(span: Span, content: PromptString | str) -> None:
         span.set_attribute(OvermindAttributes.GEN_AI_PROMPT_ID, content.id)
         span.set_attribute(OvermindAttributes.GEN_AI_PROMPT_HASH, content.hash)
         span.set_attribute(OvermindAttributes.GEN_AI_PROMPT_KWARGS, json.dumps(content.kwargs))
+        span.set_attribute(OvermindAttributes.GEN_AI_PROMPT_TEMPLATE, content.template)
 
 
 MAX_PROMPT_COUNT = 1
