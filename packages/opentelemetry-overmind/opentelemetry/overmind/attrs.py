@@ -4,6 +4,7 @@ class OvermindAttributes:
     GEN_AI_PROMPT_HASH = "overmind.prompt.hash"
     GEN_AI_PROMPT_VERSION = "overmind.prompt.version"
     GEN_AI_PROMPT_KWARGS = "overmind.prompt.kwargs"
+    GEN_AI_PROMPT_TEMPLATE = "overmind.prompt.template"
     GEN_AI_REFERENCE_OUTPUT = "overmind.reference.output"
     GEN_AI_REASONING_EFFORT = "overmind.reasoning.effort"
 
