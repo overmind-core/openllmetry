@@ -1,5 +1,5 @@
 [project]
-name = "opentelemetry-instrumentation-vertexai"
+name = "overmind-instrumentation-vertexai"
 version = "0.53.0"
 description = "OpenTelemetry Vertex AI instrumentation"
 authors = [

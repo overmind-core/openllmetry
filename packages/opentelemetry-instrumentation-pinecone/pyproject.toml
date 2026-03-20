@@ -1,5 +1,5 @@
 [project]
-name = "opentelemetry-instrumentation-pinecone"
+name = "overmind-instrumentation-pinecone"
 version = "0.53.0"
 description = "OpenTelemetry Pinecone instrumentation"
 authors = [

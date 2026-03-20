@@ -1,5 +1,5 @@
 [project]
-name = "opentelemetry-instrumentation-ollama"
+name = "overmind-instrumentation-ollama"
 version = "0.53.0"
 description = "OpenTelemetry Ollama instrumentation"
 authors = [

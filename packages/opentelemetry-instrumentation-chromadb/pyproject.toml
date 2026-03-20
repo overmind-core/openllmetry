@@ -1,5 +1,5 @@
 [project]
-name = "opentelemetry-instrumentation-chromadb"
+name = "overmind-instrumentation-chromadb"
 version = "0.53.0"
 description = "OpenTelemetry Chroma DB instrumentation"
 authors = [

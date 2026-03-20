@@ -1,5 +1,5 @@
 [project]
-name = "opentelemetry-instrumentation-haystack"
+name = "overmind-instrumentation-haystack"
 version = "0.53.0"
 description = "OpenTelemetry Haystack instrumentation"
 authors = [

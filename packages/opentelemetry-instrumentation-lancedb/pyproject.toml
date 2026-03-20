@@ -1,5 +1,5 @@
 [project]
-name = "opentelemetry-instrumentation-lancedb"
+name = "overmind-instrumentation-lancedb"
 version = "0.53.0"
 description = "OpenTelemetry Lancedb instrumentation"
 authors = [

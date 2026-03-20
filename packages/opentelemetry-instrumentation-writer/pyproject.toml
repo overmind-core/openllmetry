@@ -1,5 +1,5 @@
 [project]
-name = "opentelemetry-instrumentation-writer"
+name = "overmind-instrumentation-writer"
 version = "0.53.0"
 description = "OpenTelemetry Writer instrumentation"
 authors = [

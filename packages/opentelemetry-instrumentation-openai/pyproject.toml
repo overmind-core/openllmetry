@@ -1,5 +1,5 @@
 [project]
-name = "opentelemetry-instrumentation-openai"
+name = "overmind-instrumentation-openai"
 version = "0.53.0"
 description = "OpenTelemetry OpenAI instrumentation"
 authors = [

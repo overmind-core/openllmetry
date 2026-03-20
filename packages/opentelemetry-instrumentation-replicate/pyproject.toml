@@ -1,5 +1,5 @@
 [project]
-name = "opentelemetry-instrumentation-replicate"
+name = "overmind-instrumentation-replicate"
 version = "0.53.0"
 description = "OpenTelemetry Replicate instrumentation"
 authors = [

@@ -403,62 +403,6 @@ wheels = [
 ]
 
 [[package]]
-name = "opentelemetry-instrumentation-milvus"
-version = "0.51.1"
-source = { editable = "." }
-dependencies = [
-    { name = "opentelemetry-api" },
-    { name = "opentelemetry-instrumentation" },
-    { name = "opentelemetry-semantic-conventions" },
-    { name = "opentelemetry-semantic-conventions-ai" },
-]
-
-[package.optional-dependencies]
-instruments = [
-    { name = "pymilvus" },
-]
-
-[package.dev-dependencies]
-dev = [
-    { name = "autopep8" },
-    { name = "pymilvus" },
-    { name = "pytest" },
-    { name = "pytest-sugar" },
-    { name = "ruff" },
-]
-test = [
-    { name = "opentelemetry-sdk" },
-    { name = "pymilvus", extra = ["milvus-lite"] },
-    { name = "pytest" },
-    { name = "pytest-sugar" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "opentelemetry-api", specifier = ">=1.38.0,<2" },
-    { name = "opentelemetry-instrumentation", specifier = ">=0.59b0" },
-    { name = "opentelemetry-semantic-conventions", specifier = ">=0.59b0" },
-    { name = "opentelemetry-semantic-conventions-ai", specifier = ">=0.4.13,<0.5.0" },
-    { name = "pymilvus", marker = "extra == 'instruments'" },
-]
-provides-extras = ["instruments"]
-
-[package.metadata.requires-dev]
-dev = [
-    { name = "autopep8", specifier = ">=2.2.0,<3" },
-    { name = "pymilvus", specifier = ">=2.4.1,<3" },
-    { name = "pytest", specifier = ">=8.2.2,<9" },
-    { name = "pytest-sugar", specifier = "==1.0.0" },
-    { name = "ruff", specifier = ">=0.4.0" },
-]
-test = [
-    { name = "opentelemetry-sdk", specifier = ">=1.38.0,<2" },
-    { name = "pymilvus", extras = ["milvus-lite"], specifier = ">=2.4.1,<3" },
-    { name = "pytest", specifier = ">=8.2.2,<9" },
-    { name = "pytest-sugar", specifier = "==1.0.0" },
-]
-
-[[package]]
 name = "opentelemetry-sdk"
 version = "1.39.1"
 source = { registry = "https://pypi.org/simple" }
@@ -586,6 +530,62 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/a6/ff/c76cc5a30a4451191ff1b868a331ad1354433335277fc40931f5fc3cab9d/orjson-3.11.5-cp39-cp39-musllinux_1_2_x86_64.whl", hash = "sha256:5f691263425d3177977c8d1dd896cde7b98d93cbf390b2544a090675e83a6a0a", size = 141729, upload-time = "2025-12-06T15:55:35.317Z" },
     { url = "https://files.pythonhosted.org/packages/27/c3/7830bf74389ea1eaab2b017d8b15d1cab2bb0737d9412dfa7fb8644f7d78/orjson-3.11.5-cp39-cp39-win32.whl", hash = "sha256:61026196a1c4b968e1b1e540563e277843082e9e97d78afa03eb89315af531f1", size = 135100, upload-time = "2025-12-06T15:55:36.57Z" },
     { url = "https://files.pythonhosted.org/packages/69/e6/babf31154e047e465bc194eb72d1326d7c52ad4d7f50bf92b02b3cacda5c/orjson-3.11.5-cp39-cp39-win_amd64.whl", hash = "sha256:09b94b947ac08586af635ef922d69dc9bc63321527a3a04647f4986a73f4bd30", size = 133189, upload-time = "2025-12-06T15:55:38.143Z" },
+]
+
+[[package]]
+name = "overmind-instrumentation-milvus"
+version = "0.53.0"
+source = { editable = "." }
+dependencies = [
+    { name = "opentelemetry-api" },
+    { name = "opentelemetry-instrumentation" },
+    { name = "opentelemetry-semantic-conventions" },
+    { name = "opentelemetry-semantic-conventions-ai" },
+]
+
+[package.optional-dependencies]
+instruments = [
+    { name = "pymilvus" },
+]
+
+[package.dev-dependencies]
+dev = [
+    { name = "autopep8" },
+    { name = "pymilvus" },
+    { name = "pytest" },
+    { name = "pytest-sugar" },
+    { name = "ruff" },
+]
+test = [
+    { name = "opentelemetry-sdk" },
+    { name = "pymilvus", extra = ["milvus-lite"] },
+    { name = "pytest" },
+    { name = "pytest-sugar" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "opentelemetry-api", specifier = ">=1.38.0,<2" },
+    { name = "opentelemetry-instrumentation", specifier = ">=0.59b0" },
+    { name = "opentelemetry-semantic-conventions", specifier = ">=0.59b0" },
+    { name = "opentelemetry-semantic-conventions-ai", specifier = ">=0.4.13,<0.5.0" },
+    { name = "pymilvus", marker = "extra == 'instruments'" },
+]
+provides-extras = ["instruments"]
+
+[package.metadata.requires-dev]
+dev = [
+    { name = "autopep8", specifier = ">=2.2.0,<3" },
+    { name = "pymilvus", specifier = ">=2.4.1,<3" },
+    { name = "pytest", specifier = ">=8.2.2,<9" },
+    { name = "pytest-sugar", specifier = "==1.0.0" },
+    { name = "ruff", specifier = ">=0.4.0" },
+]
+test = [
+    { name = "opentelemetry-sdk", specifier = ">=1.38.0,<2" },
+    { name = "pymilvus", extras = ["milvus-lite"], specifier = ">=2.4.1,<3" },
+    { name = "pytest", specifier = ">=8.2.2,<9" },
+    { name = "pytest-sugar", specifier = "==1.0.0" },
 ]
 
 [[package]]

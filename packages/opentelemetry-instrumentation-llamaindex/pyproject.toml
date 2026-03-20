@@ -1,5 +1,5 @@
 [project]
-name = "opentelemetry-instrumentation-llamaindex"
+name = "overmind-instrumentation-llamaindex"
 version = "0.53.0"
 description = "OpenTelemetry LlamaIndex instrumentation"
 authors = [

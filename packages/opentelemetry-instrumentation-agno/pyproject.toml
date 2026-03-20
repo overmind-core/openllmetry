@@ -1,5 +1,5 @@
 [project]
-name = "opentelemetry-instrumentation-agno"
+name = "overmind-instrumentation-agno"
 version = "0.53.0"
 description = "OpenTelemetry Agno instrumentation"
 authors = [

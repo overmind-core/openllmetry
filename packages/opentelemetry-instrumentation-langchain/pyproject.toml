@@ -1,5 +1,5 @@
 [project]
-name = "opentelemetry-instrumentation-langchain"
+name = "overmind-instrumentation-langchain"
 version = "0.53.0"
 description = "OpenTelemetry Langchain instrumentation"
 authors = [

@@ -1,5 +1,5 @@
 [project]
-name = "opentelemetry-instrumentation-bedrock"
+name = "overmind-instrumentation-bedrock"
 version = "0.53.0"
 description = "OpenTelemetry Bedrock instrumentation"
 authors = [

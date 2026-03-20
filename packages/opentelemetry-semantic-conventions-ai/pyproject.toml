@@ -1,5 +1,5 @@
 [project]
-name = "opentelemetry-semantic-conventions-ai"
+name = "overmind-semantic-conventions-ai"
 version = "0.4.15"
 description = "OpenTelemetry Semantic Conventions Extension for Large Language Models"
 authors = [

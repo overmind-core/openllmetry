@@ -2645,64 +2645,6 @@ wheels = [
 ]
 
 [[package]]
-name = "opentelemetry-instrumentation-crewai"
-version = "0.52.6"
-source = { editable = "." }
-dependencies = [
-    { name = "opentelemetry-api" },
-    { name = "opentelemetry-instrumentation" },
-    { name = "opentelemetry-semantic-conventions" },
-    { name = "opentelemetry-semantic-conventions-ai" },
-]
-
-[package.optional-dependencies]
-instruments = [
-    { name = "crewai" },
-]
-
-[package.dev-dependencies]
-dev = [
-    { name = "autopep8" },
-    { name = "pytest" },
-    { name = "pytest-sugar" },
-    { name = "ruff" },
-]
-test = [
-    { name = "crewai" },
-    { name = "opentelemetry-sdk" },
-    { name = "pytest" },
-    { name = "pytest-recording" },
-    { name = "pytest-sugar" },
-    { name = "setuptools" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "crewai", marker = "extra == 'instruments'" },
-    { name = "opentelemetry-api", specifier = ">=1.38.0,<2" },
-    { name = "opentelemetry-instrumentation", specifier = ">=0.59b0" },
-    { name = "opentelemetry-semantic-conventions", specifier = ">=0.59b0" },
-    { name = "opentelemetry-semantic-conventions-ai", specifier = ">=0.4.13,<0.5.0" },
-]
-provides-extras = ["instruments"]
-
-[package.metadata.requires-dev]
-dev = [
-    { name = "autopep8", specifier = ">=2.2.0,<3" },
-    { name = "pytest", specifier = ">=8.2.2,<9" },
-    { name = "pytest-sugar", specifier = "==1.0.0" },
-    { name = "ruff", specifier = ">=0.4.0" },
-]
-test = [
-    { name = "crewai", specifier = ">=0.80.0,<0.81.0" },
-    { name = "opentelemetry-sdk", specifier = ">=1.38.0,<2" },
-    { name = "pytest", specifier = ">=8.2.2,<9" },
-    { name = "pytest-recording", specifier = ">=0.13.1,<0.14.0" },
-    { name = "pytest-sugar", specifier = "==1.0.0" },
-    { name = "setuptools" },
-]
-
-[[package]]
 name = "opentelemetry-proto"
 version = "1.39.1"
 source = { registry = "https://pypi.org/simple" }
@@ -2884,6 +2826,64 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/38/b3/ef4494438c90359e1547eaed3c5ec46e2c431d59a3de2af4e70ebd594c49/ormsgpack-1.12.1-cp314-cp314t-macosx_10_12_x86_64.macosx_11_0_arm64.macosx_10_12_universal2.whl", hash = "sha256:12087214e436c1f6c28491949571abea759a63111908c4f7266586d78144d7a8", size = 376777, upload-time = "2025-12-14T07:57:38.795Z" },
     { url = "https://files.pythonhosted.org/packages/05/a0/1149a7163f8b0dfbc64bf9099b6f16d102ad3b03bcc11afee198d751da2d/ormsgpack-1.12.1-cp314-cp314t-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:4e6d54c14cf86ef13f10ccade94d1e7de146aa9b17d371e18b16e95f329393b7", size = 202490, upload-time = "2025-12-14T07:57:40.168Z" },
     { url = "https://files.pythonhosted.org/packages/68/82/f2ec5e758d6a7106645cca9bb7137d98bce5d363789fa94075be6572057c/ormsgpack-1.12.1-cp314-cp314t-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:5f3584d07882b7ea2a1a589f795a3af97fe4c2932b739408e6d1d9d286cad862", size = 211733, upload-time = "2025-12-14T07:57:42.253Z" },
+]
+
+[[package]]
+name = "overmind-instrumentation-crewai"
+version = "0.53.0"
+source = { editable = "." }
+dependencies = [
+    { name = "opentelemetry-api" },
+    { name = "opentelemetry-instrumentation" },
+    { name = "opentelemetry-semantic-conventions" },
+    { name = "opentelemetry-semantic-conventions-ai" },
+]
+
+[package.optional-dependencies]
+instruments = [
+    { name = "crewai" },
+]
+
+[package.dev-dependencies]
+dev = [
+    { name = "autopep8" },
+    { name = "pytest" },
+    { name = "pytest-sugar" },
+    { name = "ruff" },
+]
+test = [
+    { name = "crewai" },
+    { name = "opentelemetry-sdk" },
+    { name = "pytest" },
+    { name = "pytest-recording" },
+    { name = "pytest-sugar" },
+    { name = "setuptools" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "crewai", marker = "extra == 'instruments'" },
+    { name = "opentelemetry-api", specifier = ">=1.38.0,<2" },
+    { name = "opentelemetry-instrumentation", specifier = ">=0.59b0" },
+    { name = "opentelemetry-semantic-conventions", specifier = ">=0.59b0" },
+    { name = "opentelemetry-semantic-conventions-ai", specifier = ">=0.4.13,<0.5.0" },
+]
+provides-extras = ["instruments"]
+
+[package.metadata.requires-dev]
+dev = [
+    { name = "autopep8", specifier = ">=2.2.0,<3" },
+    { name = "pytest", specifier = ">=8.2.2,<9" },
+    { name = "pytest-sugar", specifier = "==1.0.0" },
+    { name = "ruff", specifier = ">=0.4.0" },
+]
+test = [
+    { name = "crewai", specifier = ">=0.80.0,<0.81.0" },
+    { name = "opentelemetry-sdk", specifier = ">=1.38.0,<2" },
+    { name = "pytest", specifier = ">=8.2.2,<9" },
+    { name = "pytest-recording", specifier = ">=0.13.1,<0.14.0" },
+    { name = "pytest-sugar", specifier = "==1.0.0" },
+    { name = "setuptools" },
 ]
 
 [[package]]
