@@ -1,5 +1,5 @@
 [project]
-name = "opentelemetry-instrumentation-voyageai"
+name = "overmind-instrumentation-voyageai"
 version = "0.53.0"
 description = "OpenTelemetry Voyage AI instrumentation"
 authors = [

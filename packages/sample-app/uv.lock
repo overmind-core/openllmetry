@@ -3578,7 +3578,7 @@ wheels = [
 ]
 
 [[package]]
-name = "opentelemetry-instrumentation-agno"
+name = "overmind-instrumentation-agno"
 version = "0.52.6"
 source = { editable = "../opentelemetry-instrumentation-agno" }
 dependencies = [
@@ -6200,7 +6200,7 @@ dependencies = [
     { name = "ollama" },
     { name = "openai" },
     { name = "openai-agents" },
-    { name = "opentelemetry-instrumentation-agno" },
+    { name = "overmind-instrumentation-agno" },
     { name = "opentelemetry-instrumentation-crewai" },
     { name = "opentelemetry-instrumentation-google-generativeai" },
     { name = "opentelemetry-instrumentation-groq" },
@@ -6264,7 +6264,7 @@ requires-dist = [
     { name = "ollama", specifier = ">=0.4.7,<0.5.0" },
     { name = "openai", specifier = ">=1.52.2,<2" },
     { name = "openai-agents", specifier = ">=0.2.7,<0.3.0" },
-    { name = "opentelemetry-instrumentation-agno", editable = "../opentelemetry-instrumentation-agno" },
+    { name = "overmind-instrumentation-agno", editable = "../opentelemetry-instrumentation-agno" },
     { name = "opentelemetry-instrumentation-crewai", editable = "../opentelemetry-instrumentation-crewai" },
     { name = "opentelemetry-instrumentation-google-generativeai", editable = "../opentelemetry-instrumentation-google-generativeai" },
     { name = "opentelemetry-instrumentation-groq", editable = "../opentelemetry-instrumentation-groq" },
@@ -6825,7 +6825,7 @@ dependencies = [
     { name = "opentelemetry-api" },
     { name = "opentelemetry-exporter-otlp-proto-grpc" },
     { name = "opentelemetry-exporter-otlp-proto-http" },
-    { name = "opentelemetry-instrumentation-agno" },
+    { name = "overmind-instrumentation-agno" },
     { name = "opentelemetry-instrumentation-alephalpha" },
     { name = "opentelemetry-instrumentation-anthropic" },
     { name = "opentelemetry-instrumentation-bedrock" },
@@ -6878,7 +6878,7 @@ requires-dist = [
     { name = "opentelemetry-api", specifier = ">=1.38.0,<2" },
     { name = "opentelemetry-exporter-otlp-proto-grpc", specifier = ">=1.38.0,<2" },
     { name = "opentelemetry-exporter-otlp-proto-http", specifier = ">=1.38.0,<2" },
-    { name = "opentelemetry-instrumentation-agno", editable = "../opentelemetry-instrumentation-agno" },
+    { name = "overmind-instrumentation-agno", editable = "../opentelemetry-instrumentation-agno" },
     { name = "opentelemetry-instrumentation-alephalpha", editable = "../opentelemetry-instrumentation-alephalpha" },
     { name = "opentelemetry-instrumentation-anthropic", editable = "../opentelemetry-instrumentation-anthropic" },
     { name = "opentelemetry-instrumentation-bedrock", editable = "../opentelemetry-instrumentation-bedrock" },

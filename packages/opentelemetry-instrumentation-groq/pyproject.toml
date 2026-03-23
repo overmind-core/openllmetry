@@ -1,5 +1,5 @@
 [project]
-name = "opentelemetry-instrumentation-groq"
+name = "overmind-instrumentation-groq"
 version = "0.53.0"
 description = "OpenTelemetry Groq instrumentation"
 authors = [

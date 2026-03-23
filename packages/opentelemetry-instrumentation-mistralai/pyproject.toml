@@ -1,5 +1,5 @@
 [project]
-name = "opentelemetry-instrumentation-mistralai"
+name = "overmind-instrumentation-mistralai"
 version = "0.53.0"
 description = "OpenTelemetry Mistral AI instrumentation"
 authors = [

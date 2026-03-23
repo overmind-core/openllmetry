@@ -1117,60 +1117,6 @@ wheels = [
 ]
 
 [[package]]
-name = "opentelemetry-instrumentation-chromadb"
-version = "0.51.1"
-source = { editable = "." }
-dependencies = [
-    { name = "opentelemetry-api" },
-    { name = "opentelemetry-instrumentation" },
-    { name = "opentelemetry-semantic-conventions" },
-    { name = "opentelemetry-semantic-conventions-ai" },
-]
-
-[package.optional-dependencies]
-instruments = [
-    { name = "chromadb" },
-]
-
-[package.dev-dependencies]
-dev = [
-    { name = "autopep8" },
-    { name = "pytest" },
-    { name = "pytest-sugar" },
-    { name = "ruff" },
-]
-test = [
-    { name = "chromadb" },
-    { name = "opentelemetry-sdk" },
-    { name = "pytest" },
-    { name = "pytest-sugar" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "chromadb", marker = "extra == 'instruments'" },
-    { name = "opentelemetry-api", specifier = ">=1.38.0,<2" },
-    { name = "opentelemetry-instrumentation", specifier = ">=0.59b0" },
-    { name = "opentelemetry-semantic-conventions", specifier = ">=0.59b0" },
-    { name = "opentelemetry-semantic-conventions-ai", specifier = ">=0.4.13,<0.5.0" },
-]
-provides-extras = ["instruments"]
-
-[package.metadata.requires-dev]
-dev = [
-    { name = "autopep8", specifier = ">=2.2.0,<3" },
-    { name = "pytest", specifier = ">=8.2.2,<9" },
-    { name = "pytest-sugar", specifier = "==1.0.0" },
-    { name = "ruff", specifier = ">=0.4.0" },
-]
-test = [
-    { name = "chromadb", specifier = ">=0.5.0,<0.6.0" },
-    { name = "opentelemetry-sdk", specifier = ">=1.38.0,<2" },
-    { name = "pytest", specifier = ">=8.2.2,<9" },
-    { name = "pytest-sugar", specifier = "==1.0.0" },
-]
-
-[[package]]
 name = "opentelemetry-instrumentation-fastapi"
 version = "0.60b1"
 source = { registry = "https://pypi.org/simple" }
@@ -1322,6 +1268,60 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/88/86/cdecb0140a05e1a477b81f24739da93b25070ee01ce7f7242f44a6437594/orjson-3.11.5-cp314-cp314-win32.whl", hash = "sha256:9cc1e55c884921434a84a0c3dd2699eb9f92e7b441d7f53f3941079ec6ce7499", size = 135278, upload-time = "2025-12-06T15:55:17.202Z" },
     { url = "https://files.pythonhosted.org/packages/e4/97/b638d69b1e947d24f6109216997e38922d54dcdcdb1b11c18d7efd2d3c59/orjson-3.11.5-cp314-cp314-win_amd64.whl", hash = "sha256:a4f3cb2d874e03bc7767c8f88adaa1a9a05cecea3712649c3b58589ec7317310", size = 133170, upload-time = "2025-12-06T15:55:18.468Z" },
     { url = "https://files.pythonhosted.org/packages/8f/dd/f4fff4a6fe601b4f8f3ba3aa6da8ac33d17d124491a3b804c662a70e1636/orjson-3.11.5-cp314-cp314-win_arm64.whl", hash = "sha256:38b22f476c351f9a1c43e5b07d8b5a02eb24a6ab8e75f700f7d479d4568346a5", size = 126713, upload-time = "2025-12-06T15:55:19.738Z" },
+]
+
+[[package]]
+name = "overmind-instrumentation-chromadb"
+version = "0.53.0"
+source = { editable = "." }
+dependencies = [
+    { name = "opentelemetry-api" },
+    { name = "opentelemetry-instrumentation" },
+    { name = "opentelemetry-semantic-conventions" },
+    { name = "opentelemetry-semantic-conventions-ai" },
+]
+
+[package.optional-dependencies]
+instruments = [
+    { name = "chromadb" },
+]
+
+[package.dev-dependencies]
+dev = [
+    { name = "autopep8" },
+    { name = "pytest" },
+    { name = "pytest-sugar" },
+    { name = "ruff" },
+]
+test = [
+    { name = "chromadb" },
+    { name = "opentelemetry-sdk" },
+    { name = "pytest" },
+    { name = "pytest-sugar" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "chromadb", marker = "extra == 'instruments'" },
+    { name = "opentelemetry-api", specifier = ">=1.38.0,<2" },
+    { name = "opentelemetry-instrumentation", specifier = ">=0.59b0" },
+    { name = "opentelemetry-semantic-conventions", specifier = ">=0.59b0" },
+    { name = "opentelemetry-semantic-conventions-ai", specifier = ">=0.4.13,<0.5.0" },
+]
+provides-extras = ["instruments"]
+
+[package.metadata.requires-dev]
+dev = [
+    { name = "autopep8", specifier = ">=2.2.0,<3" },
+    { name = "pytest", specifier = ">=8.2.2,<9" },
+    { name = "pytest-sugar", specifier = "==1.0.0" },
+    { name = "ruff", specifier = ">=0.4.0" },
+]
+test = [
+    { name = "chromadb", specifier = ">=0.5.0,<0.6.0" },
+    { name = "opentelemetry-sdk", specifier = ">=1.38.0,<2" },
+    { name = "pytest", specifier = ">=8.2.2,<9" },
+    { name = "pytest-sugar", specifier = "==1.0.0" },
 ]
 
 [[package]]

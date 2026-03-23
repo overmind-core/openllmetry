@@ -1,5 +1,5 @@
 [project]
-name = "opentelemetry-instrumentation-alephalpha"
+name = "overmind-instrumentation-alephalpha"
 version = "0.53.0"
 description = "OpenTelemetry Aleph Alpha instrumentation"
 authors = [

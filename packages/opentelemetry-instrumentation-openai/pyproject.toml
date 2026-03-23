@@ -1,5 +1,5 @@
 [project]
-name = "opentelemetry-instrumentation-openai"
+name = "overmind-instrumentation-openai"
 version = "0.53.0"
 description = "OpenTelemetry OpenAI instrumentation"
 authors = [
@@ -15,9 +15,7 @@ dependencies = [
   "opentelemetry-instrumentation>=0.59b0",
   "opentelemetry-semantic-conventions-ai>=0.4.13,<0.5.0",
   "opentelemetry-semantic-conventions>=0.59b0",
-  # Not on PyPI; use GitHub install:
-  # "opentelemetry-overmind>=0.1.0",
-  "opentelemetry-overmind @ git+https://github.com/overmind-core/openllmetry.git@overmind-otel-extension#subdirectory=packages/opentelemetry-overmind",
+  "opentelemetry-overmind>=0.53.0",
 ]
 
 [project.urls]

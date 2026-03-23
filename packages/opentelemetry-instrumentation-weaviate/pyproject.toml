@@ -1,5 +1,5 @@
 [project]
-name = "opentelemetry-instrumentation-weaviate"
+name = "overmind-instrumentation-weaviate"
 version = "0.53.0"
 description = "OpenTelemetry Weaviate instrumentation"
 authors = [

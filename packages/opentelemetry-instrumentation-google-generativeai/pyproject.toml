@@ -1,5 +1,5 @@
 [project]
-name = "opentelemetry-instrumentation-google-generativeai"
+name = "overmind-instrumentation-google-generativeai"
 version = "0.53.0"
 description = "OpenTelemetry Google Generative AI instrumentation"
 authors = [

@@ -1,5 +1,5 @@
 [project]
-name = "opentelemetry-instrumentation-mcp"
+name = "overmind-instrumentation-mcp"
 version = "0.53.0"
 description = "OpenTelemetry mcp instrumentation"
 authors = [

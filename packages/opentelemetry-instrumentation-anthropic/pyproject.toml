@@ -1,5 +1,5 @@
 [project]
-name = "opentelemetry-instrumentation-anthropic"
+name = "overmind-instrumentation-anthropic"
 version = "0.53.0"
 description = "OpenTelemetry Anthropic instrumentation"
 authors = [

@@ -1,5 +1,5 @@
 [project]
-name = "opentelemetry-instrumentation-cohere"
+name = "overmind-instrumentation-cohere"
 version = "0.53.0"
 description = "OpenTelemetry Cohere instrumentation"
 authors = [

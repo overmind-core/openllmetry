@@ -5,7 +5,7 @@ authors = [
 name = "opentelemetry-overmind"
 readme = "README.md"
 requires-python = ">=3.10,<4"
-version = "0.1.0"
+version = "0.53.0"
 
 [tool.poetry]
 packages = [{ include = "opentelemetry/overmind" }]

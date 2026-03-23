@@ -918,68 +918,6 @@ wheels = [
 ]
 
 [[package]]
-name = "opentelemetry-instrumentation-writer"
-version = "0.52.3"
-source = { editable = "." }
-dependencies = [
-    { name = "opentelemetry-api" },
-    { name = "opentelemetry-instrumentation" },
-    { name = "opentelemetry-semantic-conventions" },
-    { name = "opentelemetry-semantic-conventions-ai" },
-]
-
-[package.optional-dependencies]
-instruments = [
-    { name = "writer" },
-]
-
-[package.dev-dependencies]
-dev = [
-    { name = "autopep8" },
-    { name = "black" },
-    { name = "isort" },
-    { name = "ruff" },
-]
-test = [
-    { name = "opentelemetry-sdk" },
-    { name = "pytest" },
-    { name = "pytest-asyncio" },
-    { name = "pytest-recording" },
-    { name = "pytest-sugar" },
-    { name = "python-dotenv" },
-    { name = "vcrpy" },
-    { name = "writer-sdk" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "opentelemetry-api", specifier = ">=1.38.0,<2" },
-    { name = "opentelemetry-instrumentation", specifier = ">=0.59b0" },
-    { name = "opentelemetry-semantic-conventions", specifier = ">=0.59b0" },
-    { name = "opentelemetry-semantic-conventions-ai", specifier = ">=0.4.11" },
-    { name = "writer", marker = "extra == 'instruments'" },
-]
-provides-extras = ["instruments"]
-
-[package.metadata.requires-dev]
-dev = [
-    { name = "autopep8", specifier = ">=2.2.0,<3" },
-    { name = "black", specifier = ">=25.1.0,<26" },
-    { name = "isort", specifier = ">=6.0.1,<7" },
-    { name = "ruff", specifier = ">=0.4.0" },
-]
-test = [
-    { name = "opentelemetry-sdk", specifier = ">=1.38.0,<2" },
-    { name = "pytest", specifier = ">=8.2.2,<9" },
-    { name = "pytest-asyncio", specifier = ">=0.23.7,<0.24.0" },
-    { name = "pytest-recording", specifier = ">=0.13.1,<0.14.0" },
-    { name = "pytest-sugar", specifier = "==1.0.0" },
-    { name = "python-dotenv", specifier = ">=1.1.1,<2" },
-    { name = "vcrpy", specifier = ">=8.0.0,<9" },
-    { name = "writer-sdk", specifier = ">=2.3.0,<3" },
-]
-
-[[package]]
 name = "opentelemetry-sdk"
 version = "1.39.1"
 source = { registry = "https://pypi.org/simple" }
@@ -1094,6 +1032,68 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/88/86/cdecb0140a05e1a477b81f24739da93b25070ee01ce7f7242f44a6437594/orjson-3.11.5-cp314-cp314-win32.whl", hash = "sha256:9cc1e55c884921434a84a0c3dd2699eb9f92e7b441d7f53f3941079ec6ce7499", size = 135278, upload-time = "2025-12-06T15:55:17.202Z" },
     { url = "https://files.pythonhosted.org/packages/e4/97/b638d69b1e947d24f6109216997e38922d54dcdcdb1b11c18d7efd2d3c59/orjson-3.11.5-cp314-cp314-win_amd64.whl", hash = "sha256:a4f3cb2d874e03bc7767c8f88adaa1a9a05cecea3712649c3b58589ec7317310", size = 133170, upload-time = "2025-12-06T15:55:18.468Z" },
     { url = "https://files.pythonhosted.org/packages/8f/dd/f4fff4a6fe601b4f8f3ba3aa6da8ac33d17d124491a3b804c662a70e1636/orjson-3.11.5-cp314-cp314-win_arm64.whl", hash = "sha256:38b22f476c351f9a1c43e5b07d8b5a02eb24a6ab8e75f700f7d479d4568346a5", size = 126713, upload-time = "2025-12-06T15:55:19.738Z" },
+]
+
+[[package]]
+name = "overmind-instrumentation-writer"
+version = "0.53.0"
+source = { editable = "." }
+dependencies = [
+    { name = "opentelemetry-api" },
+    { name = "opentelemetry-instrumentation" },
+    { name = "opentelemetry-semantic-conventions" },
+    { name = "opentelemetry-semantic-conventions-ai" },
+]
+
+[package.optional-dependencies]
+instruments = [
+    { name = "writer" },
+]
+
+[package.dev-dependencies]
+dev = [
+    { name = "autopep8" },
+    { name = "black" },
+    { name = "isort" },
+    { name = "ruff" },
+]
+test = [
+    { name = "opentelemetry-sdk" },
+    { name = "pytest" },
+    { name = "pytest-asyncio" },
+    { name = "pytest-recording" },
+    { name = "pytest-sugar" },
+    { name = "python-dotenv" },
+    { name = "vcrpy" },
+    { name = "writer-sdk" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "opentelemetry-api", specifier = ">=1.38.0,<2" },
+    { name = "opentelemetry-instrumentation", specifier = ">=0.59b0" },
+    { name = "opentelemetry-semantic-conventions", specifier = ">=0.59b0" },
+    { name = "opentelemetry-semantic-conventions-ai", specifier = ">=0.4.11" },
+    { name = "writer", marker = "extra == 'instruments'" },
+]
+provides-extras = ["instruments"]
+
+[package.metadata.requires-dev]
+dev = [
+    { name = "autopep8", specifier = ">=2.2.0,<3" },
+    { name = "black", specifier = ">=25.1.0,<26" },
+    { name = "isort", specifier = ">=6.0.1,<7" },
+    { name = "ruff", specifier = ">=0.4.0" },
+]
+test = [
+    { name = "opentelemetry-sdk", specifier = ">=1.38.0,<2" },
+    { name = "pytest", specifier = ">=8.2.2,<9" },
+    { name = "pytest-asyncio", specifier = ">=0.23.7,<0.24.0" },
+    { name = "pytest-recording", specifier = ">=0.13.1,<0.14.0" },
+    { name = "pytest-sugar", specifier = "==1.0.0" },
+    { name = "python-dotenv", specifier = ">=1.1.1,<2" },
+    { name = "vcrpy", specifier = ">=8.0.0,<9" },
+    { name = "writer-sdk", specifier = ">=2.3.0,<3" },
 ]
 
 [[package]]

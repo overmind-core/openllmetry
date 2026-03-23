@@ -1,5 +1,5 @@
 [project]
-name = "opentelemetry-instrumentation-transformers"
+name = "overmind-instrumentation-transformers"
 version = "0.53.0"
 description = "OpenTelemetry transformers instrumentation"
 authors = [

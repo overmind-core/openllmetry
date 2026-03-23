@@ -1,5 +1,5 @@
 [project]
-name = "opentelemetry-instrumentation-watsonx"
+name = "overmind-instrumentation-watsonx"
 version = "0.53.0"
 description = "OpenTelemetry IBM Watsonx Instrumentation"
 authors = [
