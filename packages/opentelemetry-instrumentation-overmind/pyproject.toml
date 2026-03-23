@@ -2,7 +2,7 @@
 authors = [
     { name = "pritamsoni-hsr", email = "23050213+pritamsoni-hsr@users.noreply.github.com" },
 ]
-name = "opentelemetry-instrumentation-overmind"
+name = "opentelemetry-overmind"
 readme = "README.md"
 requires-python = ">=3.10,<4"
 version = "0.53.0"
