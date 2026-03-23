@@ -17,7 +17,7 @@ dependencies = [
   "opentelemetry-semantic-conventions>=0.59b0",
   # Not on PyPI; use GitHub install:
   # "opentelemetry-overmind>=0.1.0",
-  "opentelemetry-overmind @ git+https://github.com/overmind-core/openllmetry.git@overmind-otel-extension#subdirectory=packages/opentelemetry-overmind",
+  "opentelemetry-instrumentation-overmind>=0.1.0",
 ]
 
 [project.urls]
