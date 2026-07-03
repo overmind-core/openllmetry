@@ -254,6 +254,10 @@ async def _awrap(
             GenAIAttributes.GEN_AI_REQUEST_MODEL: llm_model,
         },
     )
+    from opentelemetry.overmind.processor import request_processor
+    # Let Overmind capture prompt metadata, if present
+    request_processor(span, kwargs, "google.genai.responses")
+
     start_time = time.perf_counter()
     await _handle_request_async(span, args, kwargs, llm_model, event_logger)
     try:
